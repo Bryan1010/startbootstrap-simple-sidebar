@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Start Bootstrap - Simple Sidebar H`TML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
@@ -26,11 +26,12 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #3d3b30;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    color: bisque;
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -53,7 +54,7 @@
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 400  px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -88,7 +89,7 @@
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999999;
+    color: #5c80bc;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -122,4 +123,20 @@
         position: relative;
         margin-right: 0;
     }
+}
+.margins {
+    
+}
+
+body{
+    background-color: #5c80bc;
+}
+h1, h2, h3, h4, h5, h6, h7, h8{
+    color: #ddd8b8;
+}
+li, a{
+    color: ;}
+
+.yolo {
+    height: 700px;
 }

@@ -2629,6 +2629,7 @@ input[type="search"] {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 25px;
 }
 .radio label,
 .checkbox label {
