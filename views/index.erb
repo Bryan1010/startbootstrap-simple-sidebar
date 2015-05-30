@@ -38,9 +38,9 @@
                         <h1 style="color:#fccf21;">Idea.me</h1>
                     </a>
                 </li>
-                <li>
-                   <h4>here goes the data</h4> 
-                </li>
+                <% @posts.each do |post| %>
+                    <li><%= post.titlePost %></li>
+                <% end %>
                 
             </ul>
         </div>
@@ -52,25 +52,20 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <h1 class="text-center margins">Tell us about your idea...</h1>
-                        <div class="input-group  col-xs-12 col-md-offset-3 col-md-6 radio">
-                            <input type="text" class="form-control" name="title" placeholder="Title" aria-describedby="basic-addon1" style="margin:50px 0 15px 0">
-                        </div>
-                        <div class="input-group col-xs-12 col-md-offset-3 col-md-6 radio">
-                            <input type="text" class="form-control" name="email" placeholder="Email" aria-describedby="basic-addon1" style="margin:15px 0 15px 0">
-                        </div>
-                        <div class="input-group col-xs-12 col-md-offset-3 col-md-6 radio">
-                           <textarea class="form-control yolo" placeholder="Explain your idea" rows="10" style="margin:15px 0 30px 0"></textarea>
-                        </div>
-                        <hr>
-                        
-                        <div class=" checkbox col-xs-6 pull-left" style="width: 25%;">
-                            <label>
-                                <input type="checkbox" value=""><h6>
-                                Check the box to recieve spacecat pictures to your email.</h6>
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-lg col-xs-6 pull-right" style="width:25%; background-color: #fccf21; border: none; color: #000;">Submit Idea</button>
-                        <a href="#menu-toggle" class="btn btn-default hidden visible-xs visible-sm" id="menu-toggle">Toggle Menu</a>
+                        <form action="/createPost" method="post">
+                            <div class="input-group  col-xs-12 col-md-offset-3 col-md-6 radio">
+                                <input type="text" class="form-control" name="titlePost" placeholder="Title" aria-describedby="basic-addon1" style="margin:50px 0 15px 0">
+                            </div>
+                            <div class="input-group col-xs-12 col-md-offset-3 col-md-6 radio">
+                                <input type="text" class="form-control" name="emailPost" placeholder="Email" aria-describedby="basic-addon1" style="margin:15px 0 15px 0">
+                            </div>
+                            <div class="input-group col-xs-12 col-md-offset-3 col-md-6 radio">
+                               <textarea name="descPost" class="form-control yolo" placeholder="Explain your idea" rows="10" style="margin:15px 0 30px 0"></textarea>
+                            </div>
+                            <hr>
+                            <button type="submit" class="btn btn-lg col-xs-6 pull-right" style="width:25%; background-color: #fccf21; border: none; color: #000;">Submit Idea</button>
+                            <a href="#menu-toggle" class="btn btn-default hidden visible-xs visible-sm" id="menu-toggle">Toggle Menu</a>
+                        </form>
                     </div>
                 </div>
             </div>
