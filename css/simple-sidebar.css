@@ -129,14 +129,12 @@
 }
 
 body{
-    background-color: #5c80bc;
+    background-color: #003249;
 }
 h1, h2, h3, h4, h5, h6, h7, h8{
-    color: #ddd8b8;
+    color: white;
 }
-li, a{
-    color: ;}
 
 .yolo {
-    height: 700px;
+    height: 40px;
 }
