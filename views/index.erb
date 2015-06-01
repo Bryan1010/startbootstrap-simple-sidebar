@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <% @posts.each do |post| %>
-                    <li><%= post.titlePost %></li>
+                    <li><a style="color: #fff;" data-toggle="modal" data-target="#myModal"><%= post.titlePost %></a></li>
                 <% end %>
                 
             </ul>
@@ -73,6 +73,24 @@
         <!-- /#page-content-wrapper -->
 
     </div>
+
+    <!--modals-->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 style="color: #000;" class="modal-title">Details</h2>
+                </div>
+                <div class="modal-body">
+                    <h4 style="color: #000;"></h4>
+                    <h4 style="color: #000;"></h4>
+                    <h4 style="color: #000;"></h4>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- /#wrapper -->
 
     <!-- jQuery -->
@@ -90,5 +108,4 @@
     </script>
 
 </body>
-
 </html>
